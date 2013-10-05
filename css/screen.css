@@ -1,0 +1,343 @@
+/* typography */
+@font-face {
+    font-family: 'PTSans';
+    src: url('PTS55F-webfont.eot');
+    src: url('PTS55F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('PTS55F-webfont.woff') format('woff'),
+         url('PTS55F-webfont.ttf') format('truetype'),
+         url('PTS55F-webfont.svg#PTSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	}
+@font-face {
+    font-family: 'PTSans';
+    src: url('PTS56F-webfont.eot');
+    src: url('PTS56F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('PTS56F-webfont.woff') format('woff'),
+         url('PTS56F-webfont.ttf') format('truetype'),
+         url('PTS56F-webfont.svg#PTSansItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+	}
+@font-face {
+    font-family: 'PTSans';
+    src: url('PTS75F-webfont.eot');
+    src: url('PTS75F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('PTS75F-webfont.woff') format('woff'),
+         url('PTS75F-webfont.ttf') format('truetype'),
+         url('PTS75F-webfont.svg#PTSansBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+	}
+@font-face {
+    font-family: 'PTSans';
+    src: url('PTS76F-webfont.eot');
+    src: url('PTS76F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('PTS76F-webfont.woff') format('woff'),
+         url('PTS76F-webfont.ttf') format('truetype'),
+         url('PTS76F-webfont.svg#PTSansBoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+	}
+/* end typography */
+
+
+/* tags */
+body {
+	font-family:PTSans,Helvetica,Arial,sans-serif;
+	font-size:16px;
+	line-height:1.5em;
+	color:#000;
+	margin:0;
+	padding:0;
+	background-color:#fff;
+	}
+a {
+	color:#60696D;
+	text-decoration:none;
+	}
+a:hover {
+	color:#60696D;
+	text-decoration:none;
+	}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight:normal;
+	line-height:1em;
+	margin:40px 0 10px 0;
+	color:#60696D;
+	}
+h1 {
+	font-size:1.9em;
+	}
+h2 {
+	font-size:1.4em;
+	}
+h3 {
+	font-size:1.2em;
+	}
+h4 {
+	font-size:1.1em;
+	}
+input {
+	background-color:#f0f0f0;
+	border:0;
+	font-family:Arial,Helvetica,sans-serif;
+	padding:2px;
+	font-size:1em;
+	width:100px;
+	box-shadow:inset 0 1px 2px 0 rgba(0,0,0,.3);
+	}
+input:focus {
+	background-color:#fff;
+	box-shadow:0 1px 2px 0 rgba(0,0,0,.3);
+	}
+input[type=submit],input[type=button] {
+	color:#fff;
+	background-color:#60696D;
+	width:auto;
+	padding:5px 10px;
+	border:0;
+	border-radius:8px;
+	cursor:pointer;
+	box-shadow:0 1px 2px 0 rgba(0,0,0,.3);
+	}
+input[type=submit]:hover,input[type=button]:hover {
+	background-color:#60696D;
+	}
+cite {
+	display:inline-block;
+	font-family:Georgia,"Times New Roman",serif;
+	font-size:1.2em;
+	padding-left:30px;
+	background:url('../img/cite.png') top left no-repeat transparent;
+	color:#5A6567;
+	width:80%;
+	margin:10px 0;
+	}
+quote {
+	width:30%;
+	display:block;
+	font-size:2em;
+	margin:20px;
+	padding:10px 0;
+	border:5px solid #5A6567;
+	border-left:0;
+	border-right:0;
+	}
+.alignleft {
+	float:left;
+	margin:0 20px 10px 0;
+	}
+.alignright {
+	float:right;
+	margin:0 0 10px 20px;
+	}
+.thumb {
+	max-width:200px;
+	overflow:hidden;
+	}
+.readMore {
+	background-color:#4382B4;
+	color:#fff;
+	display:inline-block;
+	padding:0px 10px;
+	font-size:.8em;
+	}
+.readMore:hover {
+	color:#fff;
+	background-color:#E2AB00;
+	}
+/* end tags */
+
+
+/* header */
+#header {
+	padding:20px 0;
+	}
+/* end header */
+
+
+/* grid */
+#container {
+	position:relative;
+	width:612px;
+	margin:0 auto;
+	}
+/* end grid */
+
+
+.photo {
+	margin:40px 0;
+	}
+.photo img {
+	margin:5px 0;
+	}
+.photo h2 {
+	margin:0;
+	}
+.photo small {
+	color:#888;
+	}
+.photo .date {
+	float:right;
+	}
+.timestamp {
+	display:none;
+	}
+#loading {
+	background:url('../img/loading.gif') center center no-repeat transparent;
+	height:30px;
+	border:1px solid #eee;
+	}
+
+
+/* socials */
+#socials {
+	position:fixed;
+	top:20px;
+	right:20px;
+	padding:20px;
+	width:100px;
+	background-color:#fff;
+	}
+
+#fbButton {
+	display:inline-block;
+	position:relative;
+	width:92px;
+	height:20px;
+	overflow:hidden;
+	background-color:#60696D;
+	border:4px solid #60696D;
+	margin-right:2px;
+	}
+#fbButton .fb-like {
+	position:absolute;
+	top:0;
+	left:0;
+	}
+#fbButton .fb-like iframe {
+	opacity:0;
+	z-index:2;
+	}
+#fbButton .fb-like.bottom {
+	left:auto;
+	right:0;
+	}
+#fbButton .fb-like.bottom iframe {
+	opacity:1;
+	z-index:0;
+	}
+#fbButton .fbCustomLike {
+	position:absolute;
+	top:0;
+	left:0;
+	display:inline-block;
+	color:#eee;
+	background:url('../img/fbCustomButton.png') top left no-repeat #60696D;
+	padding:0 4px 0 22px;
+	width:40px;
+	height:20px;
+	z-index:1;
+	font-size:.65em;
+	white-space:nowrap;
+	}
+#fbShare {
+	position:absolute;
+	top:-15px;
+	right:0;
+	font-size:.7em;
+	background-color:#fff;
+	border:1px solid #888;
+	height:31px;
+	line-height:1em;
+	display:none;
+	}
+#fbShare a {
+	display:block;
+	padding:4px 10px;
+	height:28px;
+	background:url('../img/dwarrow.png') 25px bottom no-repeat transparent;
+	}
+#fbShare a .button {
+	text-decoration:underline;
+	}
+
+#twitterButton {
+	display:inline-block;
+	position:relative;
+	width:92px;
+	height:20px;
+	overflow:hidden;
+	background-color:#60696D;
+	border:4px solid #60696D;
+	margin-right:2px;
+	}
+#twitterButton .twitter-share-button {
+	position:absolute;
+	top:0;
+	left:0;
+	opacity:0;
+	z-index:2;
+	}
+#twitterButton .twitter-share-button.bottom {
+	left:7px;
+	opacity:1;
+	z-index:0;
+	}
+#twitterButton .twitterCustomLike {
+	position:absolute;
+	top:0;
+	left:0;
+	display:inline-block;
+	color:#eee;
+	background:url('../img/twitterCustomButton.png') top left no-repeat #60696D;
+	padding:0 4px 0 22px;
+	width:40px;
+	height:20px;
+	z-index:1;
+	font-size:.65em;
+	white-space:nowrap;
+	}
+
+#plusButton {
+	display:inline-block;
+	position:relative;
+	width:92px;
+	height:20px;
+	overflow:hidden;
+	background-color:#60696D;
+	border:4px solid #60696D;
+	margin-right:2px;
+	}
+#plusButton #___plusone_0 {
+	position:absolute;
+	bottom:0;
+	left:0;
+	opacity:0;
+	z-index:2;
+	}
+#plusButton .bottom {
+	position:absolute;
+	top:0;
+	left:32px;
+	opacity:1;
+	z-index:0;
+	}
+#plusButton .plusCustomLike {
+	position:absolute;
+	top:0;
+	left:0;
+	display:inline-block;
+	color:#eee;
+	background:url('../img/plusCustomButton.png') top left no-repeat #60696D;
+	padding:0 4px 0 22px;
+	width:40px;
+	height:20px;
+	z-index:1;
+	font-size:.65em;
+	white-space:nowrap;
+	}
+
+/**/
