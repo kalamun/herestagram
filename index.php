@@ -16,6 +16,7 @@
 	</head>
 
 <body>
+<!-- deprecated project -->
 	<div id="container">
 		<div id="header">
 			<h1><img src="./img/logo.png" width="64" height="64" alt="" /> <strong>Herestagram</strong> photos taken where you are</h1>
